@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiss Day By Sourav</title>
+
+    <style>
+        body{
+            background-color:#78e08f;
+            margin:0;
+        }
+
+        .container{
+            margin: auto;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            width:232px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ff00ff, #ff1493);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: glowText 3s infinite linear;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 
+                         0 0 20px rgba(255, 105, 180, 0.8), 
+                         0 0 30px rgba(255, 20, 147, 1);
+        }
+
+        @keyframes glowText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ff00ff, #ff1493);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 
+                        0 0 20px rgba(255, 105, 180, 0.8), 
+                        0 0 30px rgba(255, 20, 147, 1);
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Kiss Day</h1>
+
+    <div class='container'>
+        <div id='l-ball' class='ball'>
+          <div class='face face-l'>
+            <div class='eye eye-l'></div>
+            <div class='eye eye-r'></div>
+            <div class='mouth'></div>
+          </div>
+        </div>
+        <div id='r-ball' class='ball'>
+          <div class='face face-r'>
+            <div class='eye eye-l eye-r-p'></div>
+            <div class='eye eye-r eye-r-p'></div>
+            <div class='mouth mouth-r'></div>
+            <div class='kiss-m'>
+              <div class='kiss'></div>
+              <div class='kiss'></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='main.html'">Click Me</button>
+    </div>
+</body>
+</html>

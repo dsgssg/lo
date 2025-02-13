@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kiss Game By Sourav 💝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        * {
+            font-family: 'Bubblegum Sans', cursive;
+            touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        body {
+            overflow: hidden;
+            background: linear-gradient(145deg, #ff9a9e, #fad0c4, #ffd1ff);
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            padding: 10px;
+        }
+        .game-button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin: 10px;
+            width: 80%;
+            max-width: 300px;
+            background: #ff477e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Welcome to the Kiss Game, Madam Ji! 💝</h1>
+        <button id="start-game" class="game-button">Start Game 💋</button>
+    </div>
+
+    <script>
+        document.getElementById('start-game').addEventListener('click', () => {
+            window.location.href = 'play.html';
+        });
+    </script>
+</body>
+</html>
