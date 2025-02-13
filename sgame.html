@@ -9,7 +9,7 @@
     <style>
         * {
             font-family: 'Bubblegum Sans', cursive;
-            touch-action: none;
+            touch-action: manipulation;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             user-select: none;
@@ -17,25 +17,37 @@
         body {
             overflow: hidden;
             background: linear-gradient(145deg, #ff9a9e, #fad0c4, #ffd1ff);
-        }
-        .content-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             height: 100vh;
             text-align: center;
             padding: 10px;
         }
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 400px;
+        }
         .game-button {
-            font-size: 1.5rem;
-            padding: 10px 20px;
-            border-radius: 30px;
-            margin: 10px;
-            width: 80%;
-            max-width: 300px;
-            background: #ff477e;
+            font-size: 1.8rem;
+            padding: 15px 25px;
+            border-radius: 50px;
+            margin: 15px;
+            width: 100%;
+            max-width: 320px;
+            background: linear-gradient(45deg, #ff477e, #ff6ec7);
             color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 71, 126, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .game-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 71, 126, 0.5);
         }
     </style>
 </head>
